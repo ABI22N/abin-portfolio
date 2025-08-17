@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Libertinus+Mono&family=Outfit:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+    <style>
+        * {
+            font-family: "Outfit", sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-timeline: auto;
+        }
+
+        :root {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-teal-950">
+
+    <div
+        class="bg-[url('https://evosportsqatar.com/wp-content/uploads/2024/08/green-circle-bg-scaled.jpg')] w-full h-screen bg-no-repeat bg-cover">
+        <div class="w-full h-screen bg-black/40 grid grid-rows-[auto_1fr]">
+            <nav class="text-white w-full">
+                <!-- 👇 This hidden checkbox is the state and MUST be a sibling of the dropdown -->
+                <input type="checkbox" id="menu-toggle" class="peer hidden" />
+                <div class="grid grid-cols-2 items-center px-6 py-4">
+                    <h1 class="text-2xl md:text-4xl font-bold md:pl-40 pt-5">ABIN ALIAS</h1>
+
+                    <ul class="hidden md:flex  text-lg">
+                        <li class="hover:text-yellow-500 cursor-pointer px-8 text-xl"><a class="link"
+                                href="#home">Home</a></li>
+                        <li class="hover:text-yellow-500 cursor-pointer px-8 text-xl"><a class="link"
+                                href="#about">About</a></li>
+                        <li class="hover:text-yellow-500 cursor-pointer px-8 text-xl"><a class="link"
+                                href="#skills">Skills</a></li>
+                        <li class="hover:text-yellow-500 cursor-pointer px-8 text-xl"><a class="link"
+                                href="#projects">Projects</a></li>
+                        </li>
+                        <li class="hover:text-yellow-500 cursor-pointer px-8 text-xl"><a class="link"
+                                href="#contact">Contact</a></li>
+                    </ul>
+
+                    <div class="md:hidden flex justify-end">
+                        <label for="menu-toggle"
+                            class="cursor-pointer text-3xl select-none focus:outline-none">☰</label>
+                    </div>
+                </div>
+
+                <!-- Mobile dropdown (sibling of the checkbox) -->
+                <div
+                    class="md:hidden max-h-0 overflow-hidden peer-checked:max-h-96 transition-all duration-300 bg-black/80 text-white text-center space-y-4 px-6 py-0 peer-checked:py-6 bg-teal-950">
+                    <a href="#home" class="block hover:text-yellow-400 text-lg">Home</a>
+                    <a href="#about" class="block hover:text-yellow-400 text-lg">About</a>
+                    <a href="#skills" class="block hover:text-yellow-400 text-lg">Skills</a>
+                    <a href="#projects" class="block hover:text-yellow-400 text-lg">Projects</a>
+                    <a href="#contact" class="block hover:text-yellow-400 text-lg">Contact</a>
+                </div>
+            </nav>
+
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-2 sm:gap-6 items-center text-white md:px-50">
+                <div class="sm:gap-2 pl-2">
+                    <h1 class="text-lg sm:text-xl lg:text-2xl">
+                        Hi, I'm
+                        <span class="text-2xl sm:text-4xl lg:text-5xl font-bold text-yellow-300">
+                            Abin Alias
+                        </span>
+                    </h1>
+                    <br>
+                    <p class="text-sm sm:text-base lg:text-lg leading-relaxed">
+                        I’m an aspiring MERN stack developer dedicated to crafting sleek, responsive, and modern web
+                        experiences. I have a strong passion for clean, maintainable code and intuitive design that
+                        enhances usability. Constantly learning and exploring new technologies, I aim to build
+                        applications that are both visually appealing and highly functional.
+                    </p>
+                </div>
+
+                <div class="rounded-full md:shadow-lg md:shadow-teal-400/50 
+              border-2 border-yellow-400 bg-black/40 sm:border-none sm:bg-transparent mx-2">
+                    <img class="pb-1 lg:pl-15" src="./12.png" width="500px" height="500px" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about"
+        class="p-10 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-2 gap-2 sm:gap-6 items-center text-white md:px-50">
+        <div class="hidden md:flex pl-30 ">
+            <div>
+                <img class="rounded-full md:shadow-lg md:shadow-teal-400/50" src="./1567-removebg-preview.png" alt=""
+                    width="250px" height="250px">
+            </div>
+
+        </div>
+        <div>
+            <h1 class="text-2xl font-bold text-yellow-400 pb-5 ">ABOUT US</h1>
+            <p>Hi, I'm Abin Alias, a MERN stack enthusiast passionate about transforming ideas into clean, responsive,
+                and user-friendly digital experiences. As an intern and lifelong learner, I continuously explore new
+                technologies and refine my skills in MongoDB, Express.js, React, and Node.js to craft modern full-stack
+                applications that deliver real-world impact.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8 py-5">
+                <button
+                    class="bg-gradient-to-r from-luxury-600 to-luxury-500 text-white px-8 py-4 rounded-2xl hover:from-luxury-700 hover:to-luxury-600 transition-all duration-300 font-bold shadow-xl transform hover:scale-105 group">
+                    <i class="fas fa-images mr-3"></i>
+                    <span class="mr-2"><a href="#projects">View Projects</a></span>
+                    <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </button>
+                <button
+                    class="glass-morphism border-2 border-luxury-400/30 text-luxury-300 px-8 py-4 rounded-2xl hover:border-luxury-400 hover:text-luxury-400 transition-all duration-300 font-bold shadow-lg">
+                    <i class="fa-solid fa-file"></i>
+                    <a id="downloadz" href="./abincv.pdf" download="">DOWNLOAD CV</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills"
+        class="bg-[url('https://evosportsqatar.com/wp-content/uploads/2024/08/green-circle-bg-scaled.jpg')] w-full h-3/4 bg-no-repeat bg-cover border-0 bg-bottom-left py-10">
+        <h1 class="text-center text-2xl font-bold text-yellow-400 py-5">SKILLS</h1>
+        <div class="flex justify-center items-center  py-5">
+            <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-6 gap-6 sm:gap-8  ">
+
+                <div
+                    class="bg-teal-950 rounded-lg p-4 sm:p-6 hover:transform hover:scale-105 transition-all duration-300 text-center">
+                    <div
+                        class="w-12 sm:w-16 h-12 sm:h-16 bg-teal-600 rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center">
+                        <i class="fa-brands fa-html5 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">HTML</h3>
+
+                </div>
+
+
+                <div
+                    class="bg-teal-950 rounded-lg p-4 sm:p-6 hover:transform hover:scale-105 transition-all duration-300 text-center">
+                    <div
+                        class="w-12 sm:w-16 h-12 sm:h-16 bg-teal-600 rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center">
+                        <i class="fa-brands fa-css3 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">CSS</h3>
+
+                </div>
+
+
+                <div
+                    class="bg-teal-950 rounded-lg p-4 sm:p-6 hover:transform hover:scale-105 transition-all duration-300 text-center">
+                    <div
+                        class="w-12 sm:w-16 h-12 sm:h-16 bg-teal-600 rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center">
+                        <i class="fa-brands fa-square-js text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">JAVASCRIPT</h3>
+
+                </div>
+                <div
+                    class="bg-teal-950 rounded-lg p-4 sm:p-6 hover:transform hover:scale-105 transition-all duration-300 text-center">
+                    <div
+                        class="w-12 sm:w-16 h-12 sm:h-16 bg-teal-600 rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center">
+                        <i class="fa-brands fa-react text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">REACT</h3>
+
+                </div>
+
+
+                <div
+                    class="bg-teal-950 rounded-lg p-4 sm:p-6 hover:transform hover:scale-105 transition-all duration-300 text-center">
+                    <div
+                        class="w-12 sm:w-16 h-12 sm:h-16 bg-teal-600 rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center">
+                        <i class="fa-brands fa-git text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">GIT</h3>
+
+                </div>
+                <div
+                    class="bg-teal-950 rounded-lg p-4 sm:p-6 hover:transform hover:scale-105 transition-all duration-300 text-center">
+                    <div
+                        class="w-12 sm:w-16 h-12 sm:h-16 bg-teal-600 rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center">
+                        <i class="fa-brands fa-figma text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">FIGMA</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="projects" class="bg-teal-950 pt-10">
+        <h1 class="text-center text-2xl font-bold text-yellow-400 py-8">FEATURED PROJECTS</h1>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 lg:p-5 p-2">
+
+            <a href="https://tailwind-five-jet.vercel.app/" target="_blank" class="block">
+                <div
+                    class="bg-teal-800 rounded-2xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl">
+                    <img src="./Screenshot 2025-08-18 010711.png" alt="Project Screenshot"
+                        class="w-full h-48 object-cover transition duration-500 hover:scale-110">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-yellow-400">Timeless Toast</h3>
+                        <p class="text-white mb-4">Responsive website for celebrating birthdays and anniversaries using
+                            HTML, CSS, and Tailwind CSS with a modern and user-friendly design.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://restroeve.vercel.app/" target="_blank" class="block">
+                <div
+                    class="bg-teal-800 rounded-2xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl">
+                    <img src="./Screenshot 2025-08-18 010808.png" alt="Project Screenshot"
+                        class="w-full h-48 object-cover transition duration-500 hover:scale-110">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-yellow-400">Restroeve</h3>
+                        <p class="text-white mb-4">A restaurant website with HTML, CSS, and Bootstrap, showcasing a
+                            clean
+                            design, responsive layout, and smooth user experience.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://restroeve.vercel.app/" target="_blank" class="block">
+                <div
+                    class="bg-teal-800 rounded-2xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl">
+                    <img src="./Screenshot 2025-07-28 172229.png" alt="Project Screenshot"
+                        class="w-full h-48 object-cover transition duration-500 hover:scale-110">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-yellow-400 mb-3">NewBalance Clone</h3>
+                        <p class="text-white mb-4">Built a responsive clone of the NewBalance e-commerce website
+                            featuring a
+                            modern UI, product showcase sections, and intuitive navigation for an enhanced user
+                            experience.</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <div id="contact"
+        class="bg-[url('https://evosportsqatar.com/wp-content/uploads/2024/08/green-circle-bg-scaled.jpg')] w-full h-3/4 bg-no-repeat bg-cover border-0 bg-bottom-left py-10">
+
+        <section id="contact" class="py-16 ">
+            <div class="max-w-6xl mx-auto px-6">
+
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-yellow-400 ">CONTACT ME</h2>
+                    <div class="w-35 h-2 bg-teal-700 mx-auto mt-3 rounded-full"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12">
+
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-yellow-400">Get in Touch</h3>
+
+
+
+                        <div class="flex items-center gap-4 bg-teal-700 p-4 rounded-lg mb-4">
+                            <div class="w-12 h-12 flex items-center justify-center rounded-full bg-teal-950 text-white">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-yellow-400">EMAIL</p>
+                                <p class="text-yellow-200 font-medium">abinalias004@gmail.com</p>
+                            </div>
+                        </div>
+
+
+                        <div class="flex items-center gap-4 bg-teal-700 p-4 rounded-lg mb-4">
+                            <div class="w-12 h-12 flex items-center justify-center rounded-full bg-teal-950 text-white">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm  text-yellow-400">PHONE</p>
+                                <p class="text-yellow-200 font-medium">9526337028</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 bg-teal-700 p-4 rounded-lg mb-6">
+                            <div class="w-12 h-12 flex items-center justify-center rounded-full bg-teal-950 text-white">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-yellow-400">LOCATION</p>
+                                <p class="text-yellow-200 font-medium">Piravom, Kerala</p>
+                            </div>
+                        </div>
+
+
+                        <div class="flex gap-5">
+                            <a href="https://www.linkedin.com/in/abin-alias-bb9778230/?originalSubdomain=in"
+                                class="w-10 h-10 flex items-center justify-center rounded-full bg-teal-950 text-white hover:bg-blue-800 transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/ABI22N"
+                                class="w-10 h-10 flex items-center justify-center rounded-full bg-teal-950 text-white hover:bg-gray-900 transition">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://x.com/AbinAlias19"
+                                class="w-10 h-10 flex items-center justify-center rounded-full bg-teal-950 text-white hover:bg-black transition">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/abin._.alias/"
+                                class="w-10 h-10 flex items-center justify-center rounded-full bg-teal-950 text-white hover:bg-rose-500 transition">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-teal-700 p-8 rounded-2xl shadow">
+                        <form action="#" method="POST" class="space-y-5">
+                            <div>
+                                <label class="block text-white mb-1 text-yellow-200">Your Name</label>
+                                <input type="text" placeholder="Enter your name" required
+                                    class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-400 text-white" />
+                            </div>
+
+                            <div>
+                                <label class="block text-white mb-1 text-yellow-200">Your Email</label>
+                                <input type="email" placeholder="Enter your email" required
+                                    class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-400 text-white" />
+                            </div>
+
+                            <div>
+                                <label class="block text-white mb-1 text-yellow-200">Subject</label>
+                                <input type="text" placeholder="Enter subject"
+                                    class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-400 text-white" />
+                            </div>
+
+                            <div>
+                                <label class="block text-white mb-1 text-yellow-200">Your Message</label>
+                                <textarea rows="4" placeholder="Enter your message"
+                                    class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-400 text-white"></textarea>
+                            </div>
+
+                            <button type="submit"
+                                class="w-full py-3 flex items-center justify-center gap-2 rounded-lg bg-teal-950 text-white font-medium hover:bg-black transition text-yellow-500">
+                                <i class="fas fa-paper-plane text-yellow-500"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div id="footer">
+
+    </div>
+    <footer class="bg-gradient-to-b from-teal-950 to-black text-center py-10 text-white">
+
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+
+
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <h2 class="text-2xl font-bold text-yellow-300">ABIN ALIAS</h2>
+                    <p class="text-gray-300">Full Stack Developer</p>
+                </div>
+
+                <div class="flex flex-col md:flex-row md:justify-end md:items-center gap-4 text-gray-300">
+
+                    <div class="flex justify-center md:justify-end gap-6">
+                        <a href="https://www.linkedin.com/in/abin-alias-bb9778230/?originalSubdomain=in" target="_blank"
+                            class="text-gray-300 hover:text-white text-2xl transition-transform transform hover:scale-110">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/ABI22N" target="_blank"
+                            class="text-gray-300 hover:text-white text-2xl transition-transform transform hover:scale-110">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://x.com/AbinAlias19" target="_blank"
+                            class="text-gray-300 hover:text-white text-2xl transition-transform transform hover:scale-110">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/abin._.alias/" target="_blank"
+                            class="text-gray-300 hover:text-white text-2xl transition-transform transform hover:scale-110">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+
+                    <div class="flex justify-center md:justify-end items-center gap-2">
+                        <i class="fas fa-envelope text-white"></i>
+                        <a href="mailto:abinalias004@gmail.com" class="hover:text-white">
+                            abinalias004@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="border-t border-gray-600 my-6 mx-5"></div>
+
+
+        <p class="text-sm text-gray-400">
+            © 2025 Abin Alias. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+</body>
